@@ -1,11 +1,12 @@
-import React, { Component } from 'react'
+import React from 'react'
+import {Link} from 'react-router-dom'
 
-export default class Navbar extends Component {
-  render() {
-    return (
-      <div>
-         
-      </div>
-    )
-  }
+export default function Navigation() {
+  return (
+    <div>
+      <Link to="/">Home</Link>
+      <Link to="/login">Login</Link>
+      <Link to="/products">Products</Link>
+    </div>
+  )
 }
